@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta de Proyecto - Grupo Novo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -0.5rem;
+            top: 1.5rem;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            background-color: #1d4ed8;
+            /* blue-700 */
+            border: 3px solid white;
+            box-shadow: 0 0 0 2px #1d4ed8;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- Header -->
+    <header class="bg-blue-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <i data-lucide="car" class="w-8 h-8"></i>
+                <h1 class="text-2xl font-bold tracking-tight">Grupo Novo</h1>
+            </div>
+            <div class="hidden md:flex space-x-2 text-sm text-blue-200">
+                <span>Fiat</span> • <span>Jeep</span> • <span>RAM</span> • <span>Peugeot</span> • <span>Citroën</span> •
+                <span>Leapmotor</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+        <!-- Left Column: Context & Team -->
+        <div class="lg:col-span-1 space-y-6">
+
+            <!-- Resumen -->
+            <section class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <div class="flex items-center space-x-2 mb-4 text-blue-800">
+                    <i data-lucide="layout-dashboard" class="w-6 h-6"></i>
+                    <h2 class="text-xl font-semibold">Visión del Proyecto</h2>
+                </div>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                    Desarrollo de la nueva plataforma web institucional unificada. El objetivo es consolidar una
+                    presencia digital que refleje la solidez del holding, garantizando una excelente experiencia de
+                    usuario para los clientes de nuestras marcas y optimizando la conversión comercial en todas las
+                    sucursales.
+                </p>
+            </section>
+
+            <!-- Equipo -->
+            <section class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <div class="flex items-center space-x-2 mb-4 text-blue-800">
+                    <i data-lucide="users" class="w-6 h-6"></i>
+                    <h2 class="text-xl font-semibold">Equipo Estratégico</h2>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-start space-x-3">
+                        <div class="bg-blue-100 p-2 rounded-lg text-blue-700">
+                            <i data-lucide="briefcase" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-gray-800">Luis Delgado</p>
+                            <p class="text-xs text-gray-500">Gestión, cronograma y desarrollo.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <div class="bg-purple-100 p-2 rounded-lg text-purple-700">
+                            <i data-lucide="pen-tool" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-gray-800">Paula & Gonzalo (Diseño)</p>
+                            <p class="text-xs text-gray-500">Arquitectura visual, wireframes y UI/UX.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <div class="bg-green-100 p-2 rounded-lg text-green-700">
+                            <i data-lucide="share-2" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-gray-800">Virginia & Melanie (Marketing)</p>
+                            <p class="text-xs text-gray-500">Social Media, contenidos y visión comercial.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Hitos Marketing Viernes -->
+            <section
+                class="bg-gradient-to-br from-amber-500/10 to-amber-50 p-6 rounded-xl shadow-sm border border-amber-200">
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center space-x-2 text-amber-900">
+                        <i data-lucide="calendar" class="w-5 h-5 text-amber-700"></i>
+                        <h2 class="text-lg font-bold">Marketing Sync (Viernes)</h2>
+                    </div>
+                    <span
+                        class="text-[11px] bg-amber-200/80 text-amber-900 font-semibold px-2 py-0.5 rounded-full">Semanal</span>
+                </div>
+                <p class="text-xs text-amber-900/80 mb-3 leading-relaxed">
+                    Espacio semanal de alineación para revisar el estatus del proyecto e inspeccionar los entregables de
+                    cada fase:
+                </p>
+                <div class="space-y-2 text-xs">
+                    <div
+                        class="p-2 bg-white/90 rounded-lg border border-amber-200/80 flex items-center justify-between font-medium">
+                        <span class="text-gray-700 font-semibold">Viernes 11 Sep</span>
+                        <span class="text-blue-700 bg-blue-50 px-2 py-0.5 rounded text-[11px]">W1: Informe
+                            necesidades</span>
+                    </div>
+                    <div
+                        class="p-2 bg-white/90 rounded-lg border border-amber-200/80 flex items-center justify-between font-medium">
+                        <span class="text-gray-700 font-semibold">Viernes 18 Sep</span>
+                        <span class="text-gray-600 bg-gray-50 px-2 py-0.5 rounded text-[11px]">W2: Requerimientos
+                            web</span>
+                    </div>
+                    <div
+                        class="p-2 bg-white/90 rounded-lg border border-amber-200/80 flex items-center justify-between font-medium">
+                        <span class="text-gray-700 font-semibold">Viernes 25 Sep</span>
+                        <span class="text-gray-600 bg-gray-50 px-2 py-0.5 rounded text-[11px]">W3: Mapa del sitio</span>
+                    </div>
+                    <div
+                        class="p-2 bg-white/90 rounded-lg border border-amber-200/80 flex items-center justify-between font-medium">
+                        <span class="text-gray-700 font-semibold">Viernes 02 Oct</span>
+                        <span class="text-gray-600 bg-gray-50 px-2 py-0.5 rounded text-[11px]">W4: Prototipo
+                            navegable</span>
+                    </div>
+                    <div
+                        class="p-2 bg-white/90 rounded-lg border border-amber-200/80 flex items-center justify-between font-medium">
+                        <span class="text-gray-700 font-semibold">Viernes 09 Oct</span>
+                        <span class="text-gray-600 bg-gray-50 px-2 py-0.5 rounded text-[11px]">W5: Reporte de
+                            usuarios</span>
+                    </div>
+                    <div
+                        class="p-2 bg-emerald-50 rounded-lg border border-emerald-200 flex items-center justify-between font-medium">
+                        <span class="text-emerald-900 font-bold">Viernes 16 Oct</span>
+                        <span class="text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded text-[11px] font-bold">W6:
+                            Hand-off y cierre</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Metodología -->
+            <section class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <div class="flex items-center space-x-2 mb-4 text-blue-800">
+                    <i data-lucide="lightbulb" class="w-6 h-6"></i>
+                    <h2 class="text-xl font-semibold">Metodología</h2>
+                </div>
+                <p class="text-sm text-gray-600 mb-3">
+                    Bajo el marco de <strong>Design Thinking</strong>, iteraremos rápidamente para minimizar riesgos y
+                    centrar la solución en el usuario.
+                </p>
+                <div class="flex flex-wrap gap-2 mt-4">
+                    <span class="px-2 py-1 bg-gray-100 text-xs font-medium text-gray-600 rounded">Empatizar</span>
+                    <span class="px-2 py-1 bg-gray-100 text-xs font-medium text-gray-600 rounded">Definir</span>
+                    <span class="px-2 py-1 bg-gray-100 text-xs font-medium text-gray-600 rounded">Idear</span>
+                    <span class="px-2 py-1 bg-gray-100 text-xs font-medium text-gray-600 rounded">Prototipar</span>
+                    <span class="px-2 py-1 bg-gray-100 text-xs font-medium text-gray-600 rounded">Probar</span>
+                </div>
+            </section>
+        </div>
+
+        <!-- Right Column: Timeline -->
+        <div class="lg:col-span-2">
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 h-full">
+                <div
+                    class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-8 pb-4 border-b border-gray-100">
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <h2 class="text-2xl font-bold text-gray-800">Cronograma de Ejecución Acelerado</h2>
+                        </div>
+                        <p class="text-gray-500 text-sm mt-1">Fase de Diseño y Validación • 6 Semanas (07/09/2026 –
+                            16/10/2026)</p>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-2">
+                        <div
+                            class="bg-amber-50 text-amber-800 border border-amber-200 px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1.5">
+                            <i data-lucide="calendar-days" class="w-3.5 h-3.5 text-amber-600"></i> Syncs: Todos los
+                            Viernes
+                        </div>
+                        <div
+                            class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1 border border-blue-100">
+                            <i data-lucide="clock" class="w-3.5 h-3.5"></i> Sprint Activo (W1)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Container -->
+                <div class="relative border-l-2 border-gray-200 ml-4 space-y-8 pb-4">
+
+                    <!-- Week 1 -->
+                    <div class="relative pl-8 timeline-item">
+                        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-1 gap-1">
+                            <div class="flex items-center gap-2">
+                                <h3 class="text-lg font-bold text-blue-900">Semana 1: Empatizar</h3>
+                                <span
+                                    class="bg-blue-100 text-blue-800 text-[11px] font-semibold px-2 py-0.5 rounded-full">En
+                                    curso</span>
+                            </div>
+                            <span class="text-xs font-semibold text-gray-500 bg-gray-100 px-2 py-1 rounded">07/09/2026 –
+                                11/09/2026</span>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-2">Comprender las necesidades duales: requerimientos de la
+                            empresa vs. fricciones del cliente.</p>
+                        <ul class="text-sm text-gray-500 list-disc list-inside ml-1 space-y-1">
+                            <li>Reunión inicial y análisis individual (Diseño, Mkt, Liderazgo).</li>
+                            <li>Investigación de perfiles (compradores, posventa, corporativo).</li>
+                        </ul>
+
+                        <!-- Milestone Box -->
+                        <div class="mt-3 p-3 bg-amber-50/70 border border-amber-200 rounded-lg flex items-start gap-3">
+                            <div class="p-1.5 bg-amber-100 text-amber-700 rounded-md mt-0.5 shrink-0">
+                                <i data-lucide="calendar-check" class="w-4 h-4"></i>
+                            </div>
+                            <div class="text-xs w-full">
+                                <div class="flex flex-wrap items-center justify-between gap-1">
+                                    <span class="font-bold text-amber-900">Entregable Clave • Reunión de
+                                        Marketing</span>
+                                    <span
+                                        class="font-semibold text-amber-800 bg-amber-200/60 px-2 py-0.5 rounded text-[11px]">Viernes
+                                        11 de Septiembre 2026</span>
+                                </div>
+                                <p class="text-amber-900 mt-1 font-medium">Informe consolidado de necesidades
+                                    preliminares, benchmarks de la competencia y pain points del cliente.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Week 2 -->
+                    <div class="relative pl-8 timeline-item">
+                        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-1 gap-1">
+                            <h3 class="text-lg font-bold text-blue-900">Semana 2: Definir</h3>
+                            <span class="text-xs font-semibold text-gray-500 bg-gray-100 px-2 py-1 rounded">14/09/2026 –
+                                18/09/2026</span>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-2">Cruce de información para encontrar "coincidencias" y
+                            enmarcar el problema principal.</p>
+                        <ul class="text-sm text-gray-500 list-disc list-inside ml-1 space-y-1">
+                            <li>Sesión de convergencia de todo el equipo.</li>
+                            <li>Definición de los requerimientos innegociables de la web para cada marca.</li>
+                        </ul>
+
+                        <!-- Milestone Box -->
+                        <div class="mt-3 p-3 bg-amber-50/70 border border-amber-200 rounded-lg flex items-start gap-3">
+                            <div class="p-1.5 bg-amber-100 text-amber-700 rounded-md mt-0.5 shrink-0">
+                                <i data-lucide="calendar-check" class="w-4 h-4"></i>
+                            </div>
+                            <div class="text-xs w-full">
+                                <div class="flex flex-wrap items-center justify-between gap-1">
+                                    <span class="font-bold text-amber-900">Entregable Clave • Reunión de
+                                        Marketing</span>
+                                    <span
+                                        class="font-semibold text-amber-800 bg-amber-200/60 px-2 py-0.5 rounded text-[11px]">Viernes
+                                        18 de Septiembre 2026</span>
+                                </div>
+                                <p class="text-amber-900 mt-1 font-medium">Documento de problema central, objetivos
+                                    comerciales validados y matriz de requerimientos innegociables.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Week 3 -->
+                    <div class="relative pl-8 timeline-item">
+                        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-1 gap-1">
+                            <h3 class="text-lg font-bold text-blue-900">Semana 3: Idear</h3>
+                            <span class="text-xs font-semibold text-gray-500 bg-gray-100 px-2 py-1 rounded">21/09/2026 –
+                                25/09/2026</span>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-2">Lluvia de ideas y estructuración de la información para
+                            las 6 marcas y sucursales.</p>
+                        <ul class="text-sm text-gray-500 list-disc list-inside ml-1 space-y-1">
+                            <li>Arquitectura web: ¿Buscador central o selección por marca?</li>
+                            <li>Definición de integraciones comerciales (cotizadores, catálogos y mapas de stock).</li>
+                        </ul>
+
+                        <!-- Milestone Box -->
+                        <div class="mt-3 p-3 bg-amber-50/70 border border-amber-200 rounded-lg flex items-start gap-3">
+                            <div class="p-1.5 bg-amber-100 text-amber-700 rounded-md mt-0.5 shrink-0">
+                                <i data-lucide="calendar-check" class="w-4 h-4"></i>
+                            </div>
+                            <div class="text-xs w-full">
+                                <div class="flex flex-wrap items-center justify-between gap-1">
+                                    <span class="font-bold text-amber-900">Entregable Clave • Reunión de
+                                        Marketing</span>
+                                    <span
+                                        class="font-semibold text-amber-800 bg-amber-200/60 px-2 py-0.5 rounded text-[11px]">Viernes
+                                        25 de Septiembre 2026</span>
+                                </div>
+                                <p class="text-amber-900 mt-1 font-medium">Mapa del sitio (Sitemap) unificado de Grupo
+                                    Novo y catálogo de funcionalidades y módulos por marca.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Week 4 -->
+                    <div class="relative pl-8 timeline-item">
+                        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-1 gap-1">
+                            <h3 class="text-lg font-bold text-blue-900">Semana 4: Prototipar</h3>
+                            <span class="text-xs font-semibold text-gray-500 bg-gray-100 px-2 py-1 rounded">28/09/2026 –
+                                02/10/2026</span>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-2">Creación de esquemas visuales interactivos para
+                            tangibilizar la solución propuesta.</p>
+                        <ul class="text-sm text-gray-500 list-disc list-inside ml-1 space-y-1">
+                            <li>Diseño de Wireframes de media/alta fidelidad (Paula y Gonzalo).</li>
+                            <li>Flujos completos de conversión: Test-Drive, cotización y WhatsApp directo.</li>
+                        </ul>
+
+                        <!-- Milestone Box -->
+                        <div class="mt-3 p-3 bg-amber-50/70 border border-amber-200 rounded-lg flex items-start gap-3">
+                            <div class="p-1.5 bg-amber-100 text-amber-700 rounded-md mt-0.5 shrink-0">
+                                <i data-lucide="calendar-check" class="w-4 h-4"></i>
+                            </div>
+                            <div class="text-xs w-full">
+                                <div class="flex flex-wrap items-center justify-between gap-1">
+                                    <span class="font-bold text-amber-900">Entregable Clave • Reunión de
+                                        Marketing</span>
+                                    <span
+                                        class="font-semibold text-amber-800 bg-amber-200/60 px-2 py-0.5 rounded text-[11px]">Viernes
+                                        02 de Octubre 2026</span>
+                                </div>
+                                <p class="text-amber-900 mt-1 font-medium">Demostración interactiva de prototipos
+                                    navegables en Figma (versión desktop y mobile).</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Week 5 -->
+                    <div class="relative pl-8 timeline-item">
+                        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-1 gap-1">
+                            <h3 class="text-lg font-bold text-blue-900">Semana 5: Probar</h3>
+                            <span class="text-xs font-semibold text-gray-500 bg-gray-100 px-2 py-1 rounded">05/10/2026 –
+                                09/10/2026</span>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-2">Validación del prototipo con usuarios y clientes
+                            potenciales para detectar fricciones tempranas.</p>
+                        <ul class="text-sm text-gray-500 list-disc list-inside ml-1 space-y-1">
+                            <li>Test de usabilidad: Búsqueda de vehículos, simulación de compra y agendamiento.</li>
+                            <li>Feedback y recopilación de métricas cualitativas y de percepción de marca (Melanie).
+                            </li>
+                        </ul>
+
+                        <!-- Milestone Box -->
+                        <div class="mt-3 p-3 bg-amber-50/70 border border-amber-200 rounded-lg flex items-start gap-3">
+                            <div class="p-1.5 bg-amber-100 text-amber-700 rounded-md mt-0.5 shrink-0">
+                                <i data-lucide="calendar-check" class="w-4 h-4"></i>
+                            </div>
+                            <div class="text-xs w-full">
+                                <div class="flex flex-wrap items-center justify-between gap-1">
+                                    <span class="font-bold text-amber-900">Entregable Clave • Reunión de
+                                        Marketing</span>
+                                    <span
+                                        class="font-semibold text-amber-800 bg-amber-200/60 px-2 py-0.5 rounded text-[11px]">Viernes
+                                        09 de Octubre 2026</span>
+                                </div>
+                                <p class="text-amber-900 mt-1 font-medium">Reporte de validación con usuarios, matriz de
+                                    hallazgos críticos y plan de iteraciones finales.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Week 6 -->
+                    <div class="relative pl-8 timeline-item">
+                        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-1 gap-1">
+                            <div class="flex items-center gap-2">
+                                <h3 class="text-lg font-bold text-blue-900">Semana 6: Ajustes y Hand-off</h3>
+                                <span
+                                    class="bg-green-100 text-green-800 text-[11px] font-semibold px-2 py-0.5 rounded-full">Hito
+                                    Final</span>
+                            </div>
+                            <span class="text-xs font-semibold text-gray-500 bg-gray-100 px-2 py-1 rounded">12/10/2026 –
+                                16/10/2026</span>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-2">Iteración final basada en el feedback y preparación para
+                            el desarrollo técnico.</p>
+                        <ul class="text-sm text-gray-500 list-disc list-inside ml-1 space-y-1">
+                            <li>Ajustes finales de diseño (UI/UX) y especificaciones técnicas.</li>
+                            <li>Presentación formal a Gerencia y Directorio.</li>
+                            <li>Entrega formal de assets, guías de estilo y especificaciones al equipo de programación.
+                            </li>
+                        </ul>
+
+                        <!-- Milestone Box Final -->
+                        <div class="mt-3 p-3 bg-green-50 border border-green-200 rounded-lg flex items-start gap-3">
+                            <div class="p-1.5 bg-green-100 text-green-700 rounded-md mt-0.5 shrink-0">
+                                <i data-lucide="check-circle-2" class="w-4 h-4"></i>
+                            </div>
+                            <div class="text-xs w-full">
+                                <div class="flex flex-wrap items-center justify-between gap-1">
+                                    <span class="font-bold text-green-900">Cierre de Fase • Aprobación Final y
+                                        Hand-off</span>
+                                    <span
+                                        class="font-semibold text-green-800 bg-green-200/70 px-2 py-0.5 rounded text-[11px]">Viernes
+                                        16 de Octubre 2026</span>
+                                </div>
+                                <p class="text-green-900 mt-1 font-medium">Carpeta completa de desarrollo (Design
+                                    System, Figma Specs, tokens de diseño y backlog técnico para inicio de código).</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-6 mt-8">
+        <div class="max-w-6xl mx-auto px-4 text-center text-sm flex flex-col md:flex-row justify-between items-center">
+            <p>Documento Interno</p>
+            <p class="mt-2 md:mt-0">Proyecto Web Institucional &copy; 2026 Grupo Novo</p>
+        </div>
+
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
